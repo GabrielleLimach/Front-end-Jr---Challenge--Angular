@@ -123,5 +123,10 @@
       }
     }
   },
-  "defaultProject": "pokedex"
+  "defaultProject": "pokedex",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }

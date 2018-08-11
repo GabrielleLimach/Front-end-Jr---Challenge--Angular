@@ -2,7 +2,6 @@ import { PokedexService } from './../../services/pokedex.service';
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '../../../../node_modules/@angular/forms';
 
-
 @Component({
   selector: 'app-pesquisa',
   templateUrl: './pesquisa.component.html',
