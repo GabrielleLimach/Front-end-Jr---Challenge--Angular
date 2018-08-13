@@ -15,6 +15,7 @@ export class PesquisaComponent implements OnInit {
   pokeinfo: any;
   pokee: any;
   poke1: any;
+  pokemon: {};
 
   monsUrl = 'http://pokeapi.co/api/v2/pokemon/1/';
 
@@ -36,15 +37,5 @@ export class PesquisaComponent implements OnInit {
     } 
   }
 
-  adcionarPokemon(f:NgForm){
-   this.adcpoke.push(this.pokeinfo);
-   console.log(this.adcpoke);
-  }
-
-  removerPokemon(pokemon:any){
-   this.adcpoke.splice(pokemon, 1);
-    console.log(this.adcpoke);
-
-
-  }
+ 
 }

@@ -1,0 +1,28 @@
+<div class="main">
+    <form #f="ngForm" (ngSubmit)="pesquisaPokemons(f)">
+        <input type="text" [(ngModel)]="id" name="id" required>
+        <button type="submit">pesquisaPokemons</button>
+    </form>
+    <div class="card">
+        <img src="img_avatar.png" alt="Avatar" style="width:100%">
+        <div class="container">
+            <h4><b>{{pokeinfo?.forms[0]?.name}}</b></h4> 
+        </div>
+    </div>
+    <button type="submit" (click)="adcionarPokemon(f)">
+            adcionarPokemon<i class="fa fa-times"></i>
+        </button>
+    <section>Seus Pokemons</section>
+    <table>
+        <tr *ngFor="let ad of adcpoke">
+            <th>{{ad?.id}}</th>
+            <th>{{ad?.name}}</th>  
+                <button class="btn-simple" title="Remover" ata-original-title="Remove" (click)="removerPokemon()">
+                    Remover Pokemon<i class="fa fa-times"></i>
+                </button>
+            </tr>
+    </table>
+</div>
+
+
+
